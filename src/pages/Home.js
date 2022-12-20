@@ -6,6 +6,7 @@ import {
   FormUserComponent,
 } from "../components";
 import { getAllUsers, addUser, editUser, deleteUser } from "../services/User";
+import "../Assets/css/styleHome.css";
 
 const usuario1 = [
   {
@@ -58,11 +59,13 @@ const HomePage = () => {
   };
   return (
     <>
+      <NavbarKeepeComponent />
       <FormUserComponent
         userAdd={userAdd}
         usuarioEditado={usuarioEditado}
         setUsuarioEditado={setUsuarioEditado}
         userEdit={userEdit}
+        className="bg-home"
       />
     </>
   );
