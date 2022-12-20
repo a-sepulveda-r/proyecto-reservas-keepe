@@ -1,0 +1,9 @@
+.bg-form {
+  background: linear-gradient(180deg, #4d307b 0%, #f23faa 100%);
+}
+.border-radius {
+  border-radius: 19.1888px;
+}
+.botonIngresar:hover {
+  height: 180%;
+}
