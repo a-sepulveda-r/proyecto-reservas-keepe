@@ -3,6 +3,9 @@ import "../Assets/css/styleCarrusel.css";
 import img1 from "../Assets/IMG/imgRecinto1.png";
 import img2 from "../Assets/IMG/imgRecinto2.png";
 import img3 from "../Assets/IMG/imgRecinto3.png";
+import img4 from "../Assets/IMG/imgRecinto4.png";
+import img5 from "../Assets/IMG/imgRecinto5.png";
+import img6 from "../Assets/IMG/imgRecinto6.png";
 const RecintosComponent = () => {
   return (
     <div
@@ -15,7 +18,11 @@ const RecintosComponent = () => {
         <div class="carousel-item active">
           <div class="row">
             <div class="col-12 col-lg-4 text-center">
-              <img src={img1} alt="Mi imagen" class="img-fluid" />
+              <img
+                src={img1}
+                alt="Mi imagen"
+                class="img-fluid tamanio-imagen"
+              />
               <h3 class="descripcionCancha py-3">Club Basquet -Providencia</h3>
             </div>
             <div class="col-12 col-lg-4 text-center">
@@ -31,32 +38,18 @@ const RecintosComponent = () => {
         <div class="carousel-item">
           <div class="row">
             <div class="col-12 col-lg-4 text-center">
-              <img src={img1} alt="Mi imagen" class="img-fluid" />
-              <h3 class="descripcionCancha py-3">Club Basquet -Providencia</h3>
+              <img src={img4} alt="Mi imagen" class="img-fluid" />
+              <h3 class="descripcionCancha py-3">
+                Club natación -San Bernardo
+              </h3>
             </div>
             <div class="col-12 col-lg-4 text-center">
-              <img src={img2} alt="Mi imagen" class="img-fluid" />
-              <h3 class="descripcionCancha py-3">Sala Danza - Maipú</h3>
+              <img src={img5} alt="Mi imagen" class="img-fluid" />
+              <h3 class="descripcionCancha py-3">Sala de baile - Peñalolen</h3>
             </div>
             <div class="col-12 col-lg-4 text-center">
-              <img src={img3} alt="Mi imagen" class="img-fluid" />
-              <h3 class="descripcionCancha py-3">Club Padel - Recoleta</h3>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-12 col-lg-4 text-center">
-              <img src={img1} alt="Mi imagen" class="img-fluid" />
-              <h3 class="descripcionCancha py-3">Club Basquet -Providencia</h3>
-            </div>
-            <div class="col-12 col-lg-4 text-center">
-              <img src={img2} alt="Mi imagen" class="img-fluid" />
-              <h3 class="descripcionCancha py-3">Sala Danza - Maipú</h3>
-            </div>
-            <div class="col-12 col-lg-4 text-center">
-              <img src={img3} alt="Mi imagen" class="img-fluid" />
-              <h3 class="descripcionCancha py-3">Club Padel - Recoleta</h3>
+              <img src={img6} alt="Mi imagen" class="img-fluid" />
+              <h3 class="descripcionCancha py-3">Club Tenis - Las Condes</h3>
             </div>
           </div>
         </div>

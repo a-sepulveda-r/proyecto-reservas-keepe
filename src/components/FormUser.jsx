@@ -9,9 +9,9 @@ const initiaUser = {
   phonenumber: "",
   rut: "",
   username: "",
-  // rol_user_id: 2, ACACACACACACACACACACACAC
+  // rolUser: { id: "3" },
 };
-
+// agregale al componente FormUserComponent un campo con valor por defecto que se llame rolUser y tenga asignado el valor numero 2 y no vea ese campo el usuario cuando haga un post
 const FormUserComponent = ({
   userAdd,
   usuarioEditado,
@@ -32,6 +32,7 @@ const FormUserComponent = ({
         phonenumber: "",
         rut: "",
         username: "",
+        //rolUser: { id: "3" },
       });
     }
   }, [usuarioEditado]);
@@ -45,12 +46,12 @@ const FormUserComponent = ({
   };
   return (
     <>
-      <div class="container-fluid my-5 py-5 bg-form">
+      <div class="container-fluid bg-form">
         <h1 class="text-center py-3">Registro</h1>
 
         <form
-          id="formulario my-5 py-3 "
-          class="container bg-light border-radius col-lg-6 col-12"
+          id="formulario  "
+          class="container bg-light border-radius col-lg-6 col-12 my-5 py-3"
         >
           <div class="mb-3 pb-2 pt-5 mx-3">
             <label for="exampleInputNombre" class="form-label">
@@ -71,6 +72,24 @@ const FormUserComponent = ({
               Nunca compartiremos su correo electrónico con nadie.
             </div>
           </div>
+          {/* <div class="mb-3 py-2 mx-3">
+            <label for="exampleInputRol" class="form-label">
+              Rol:
+            </label>
+            <select
+              class="form-control"
+              id="exampleInputRol"
+              name="rolUser"
+              value={rolUser.id}
+              onChange={handleInputChange}
+            >
+              {rolList.map((rol) => (
+                <option key={rol.id} value={rol.id}>
+                  {rol.name}
+                </option>
+              ))}
+            </select>
+          </div> */}
           <div class="mb-3 py-2 mx-3">
             <label for="exampleInputUsername" class="form-label">
               Username:
@@ -137,7 +156,7 @@ const FormUserComponent = ({
               class="form-control"
               id="exampleInputTel"
               pattern="[0-9]*"
-              placeholder="Ingrese aquí su telfono"
+              placeholder="Ingrese aquí su telefono"
               aria-describedby="telHelp"
               name="phonenumber"
               value={phonenumber}
@@ -220,7 +239,7 @@ const FormUserComponent = ({
         </form>
       </div>
       <div
-        class="toast align-items-center mt-2 ms-4"
+        class="toast align-items-center"
         role="alert"
         aria-live="assertive"
         aria-atomic="true"

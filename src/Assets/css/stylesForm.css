@@ -7,3 +7,13 @@
 .botonIngresar:hover {
   height: 180%;
 }
+.text-registro {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 51.17px;
+  line-height: 62px;
+  /* identical to box height */
+
+  color: #000000;
+}

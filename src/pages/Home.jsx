@@ -4,9 +4,11 @@ import {
   NavbarKeepeComponent,
   RecintosComponent,
   FormUserComponent,
+  FooterComponent,
+  PromesasComponent,
+  CardPersonalComponent,
 } from "../components";
 import { getAllUsers, addUser, editUser, deleteUser } from "../services/User";
-import "../Assets/css/styleHome.css";
 
 const usuario1 = [
   {
@@ -60,13 +62,16 @@ const HomePage = () => {
   return (
     <>
       <NavbarKeepeComponent />
-      <FormUserComponent
+      <RecintosComponent />
+      <CardPersonalComponent />
+      <PromesasComponent />
+      {/* <FormUserComponent
         userAdd={userAdd}
         usuarioEditado={usuarioEditado}
         setUsuarioEditado={setUsuarioEditado}
         userEdit={userEdit}
-        className="bg-home"
-      />
+      /> */}
+      <FooterComponent />
     </>
   );
 };

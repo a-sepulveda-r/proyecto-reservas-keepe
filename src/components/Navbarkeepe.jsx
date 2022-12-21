@@ -1,14 +1,11 @@
 import React from "react";
-import "../Assets/css/stylesNav.css";
+import "../Assets/css/styleNavbar.css";
 import logoKeepe from "../Assets/IMG/keepelogo.png";
 //import "./boton";
 
 const NavbarKeepeComponent = () => {
   return (
-    <nav
-      class="navbar navbar-expand-lg navbar-dark colorNav"
-      id="navbar-example"
-    >
+    <nav class="navbar navbar-expand-lg colorNav" id="navbar-example">
       <div class="container">
         <a href="/" class="navbar-brand">
           <img class="icononav" src={logoKeepe} alt="" />
