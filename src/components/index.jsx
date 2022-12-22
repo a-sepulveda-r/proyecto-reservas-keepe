@@ -13,6 +13,7 @@ import Imagen1 from "./Imagen";
 import CalendarPretty from "./CalendarPretty";
 import ReservaTuHora from "./ReservaTuHora";
 import Imagen2 from "./Imagen2";
+import MisionVisionComponent from "./MisionVision";
 
 export {
   NavbarKeepeComponent,
@@ -30,4 +31,5 @@ export {
   CalendarPretty,
   ReservaTuHora,
   Imagen2,
+  MisionVisionComponent,
 };

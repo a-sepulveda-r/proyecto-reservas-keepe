@@ -7,7 +7,7 @@ import {
   ReservaTuHora,
 } from "../components";
 import CalendarPretty from "../components/CalendarPretty";
-import "./stylePagoReserva.css";
+import "../Assets/css/stylePagoReserva.css";
 import fotocabecera from "../Assets/IMG/fotocabecera.png";
 
 const PagoReservaPage = () => {
@@ -36,7 +36,7 @@ const PagoReservaPage = () => {
 
         <div className="tarjetaimagen">
           <Imagen2 className="tarjetaindividual" />
-          <Imagen1 />
+          <Imagen1 className="pb-5 mb-5" />
         </div>
 
         <div>

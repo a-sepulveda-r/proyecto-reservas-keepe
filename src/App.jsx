@@ -7,6 +7,7 @@ import {
   InicioSesionPage,
   RegistroPage,
   PagoReservaPage,
+  MisionVisionPage,
 } from "./pages";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/iniciarsesion" element={<InicioSesionPage />} />
         <Route path="/registro" element={<RegistroPage />} />
         <Route path="/pagoreserva" element={<PagoReservaPage />} />
+        <Route path="/misionyvision" element={<MisionVisionPage />} />
       </Routes>
     </BrowserRouter>
   );

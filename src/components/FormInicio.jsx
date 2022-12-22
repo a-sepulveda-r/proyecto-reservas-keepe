@@ -102,13 +102,16 @@ const FormInicioComponent = ({
               Editar usuario
             </button>
           ) : (
-            <button
-              type="button"
-              class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
-              onClick={() => userAdd(usuario)}
-            >
-              Iniciar Sesión
-            </button>
+            <a href="/pagoreserva">
+              <button
+                type="button"
+                class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
+                href="/pagoreserva"
+                onClick={() => userAdd(usuario)}
+              >
+                Iniciar Sesión
+              </button>
+            </a>
           )}
           <div class="form-text text-center mb-4">
             ¿No te has registrado? <a href="/registro">Registrate</a>

@@ -19,6 +19,7 @@ const CalendarPretty = () => {
         value={value}
         showDoubleView
         minDetail="year"
+        className="mt-5"
       />
     </div>
   );

@@ -40,7 +40,7 @@ const NavbarKeepeComponent = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a href="#comentarios" class="nav-link textoNav">
+              <a href="/misionyvision" class="nav-link textoNav">
                 Conócenos
               </a>
             </li>
