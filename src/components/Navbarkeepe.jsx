@@ -25,7 +25,12 @@ const NavbarKeepeComponent = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mb-2 mx-lg-auto mx-xs-0 textoNav">
             <li class="nav-item">
-              <a href="#Reservar" class="nav-link textoNav" aria-current="page">
+              <a href="/" class="nav-link textoNav" aria-current="page">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/reserva" class="nav-link textoNav" aria-current="page">
                 Reservar
               </a>
             </li>
@@ -36,12 +41,7 @@ const NavbarKeepeComponent = () => {
             </li>
             <li class="nav-item">
               <a href="#comentarios" class="nav-link textoNav">
-                Contacto
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#suscribete" class="nav-link textoNav">
-                Soporte
+                Conócenos
               </a>
             </li>
             <li class="nav-item dropdown dropdownLi">
@@ -65,20 +65,16 @@ const NavbarKeepeComponent = () => {
                 }}
               >
                 <li>
-                  <a
-                    class="dropdown-item iancl"
-                    target="_blank"
-                    href="https://chat.openai.com/chat"
-                  >
-                    Mis Reservas
+                  <a class="dropdown-item iancl" href="/iniciarsesion">
+                    Iniciar Sesión
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item iancl" target="_blank" href="/">
-                    Reservar
+                  <a class="dropdown-item iancl" href="/registro">
+                    Registrate
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a class="dropdown-item iancl" target="_blank" href="/">
                     Ver Tickets
                   </a>
@@ -87,7 +83,7 @@ const NavbarKeepeComponent = () => {
                   <a class="dropdown-item iancl" target="_blank" href="/">
                     Mi Perfil
                   </a>
-                </li>
+                </li> */}
               </ul>
             </li>
           </ul>

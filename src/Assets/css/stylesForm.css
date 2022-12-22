@@ -7,13 +7,25 @@
 .botonIngresar:hover {
   height: 180%;
 }
-.text-registro {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 51.17px;
-  line-height: 62px;
-  /* identical to box height */
+#exclamacion {
+  color: rgb(212, 50, 50);
+}
+abbr {
+  color: rgb(212, 50, 50);
+}
+/*#imprimirTicket {
+  color: #f142ab;
+}*/
 
-  color: #000000;
+#textosubtitulo {
+  margin-left: 50px;
+}
+#codigo {
+  border-radius: 10px;
+  border-color: rgb(93, 93, 231);
+  color: rgb(93, 93, 231);
+}
+#pago {
+  color: black;
+  margin-left: 50px;
 }

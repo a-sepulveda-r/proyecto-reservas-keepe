@@ -3,10 +3,13 @@ import { useNavigate } from "react-router-dom";
 import {
   NavbarKeepeComponent,
   RecintosComponent,
-  FormUserComponent,
   FooterComponent,
   PromesasComponent,
   CardPersonalComponent,
+  FormUserComponent,
+  BootCard,
+  QuehacemosComponent,
+  CarruselMainComponent,
 } from "../components";
 import { getAllUsers, addUser, editUser, deleteUser } from "../services/User";
 
@@ -62,8 +65,19 @@ const HomePage = () => {
   return (
     <>
       <NavbarKeepeComponent />
+      <CarruselMainComponent />
+      <QuehacemosComponent />
+      {/* <FormInicioComponent /> */}
       <RecintosComponent />
       <CardPersonalComponent />
+      {/* <BootCard /> */}
+      {/* <FormUserComponent
+        userAdd={userAdd}
+        usuarioEditado={usuarioEditado}
+        setUsuarioEditado={setUsuarioEditado}
+        userEdit={userEdit}
+        className="bg-home"
+      /> */}
       <PromesasComponent />
       {/* <FormUserComponent
         userAdd={userAdd}

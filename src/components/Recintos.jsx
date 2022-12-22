@@ -1,5 +1,5 @@
 import React from "react";
-import "../Assets/css/styleCarrusel.css";
+import "../Assets/css/styleRecintos.css";
 import img1 from "../Assets/IMG/imgRecinto1.png";
 import img2 from "../Assets/IMG/imgRecinto2.png";
 import img3 from "../Assets/IMG/imgRecinto3.png";
@@ -10,8 +10,9 @@ const RecintosComponent = () => {
   return (
     <div
       id="carouselExampleControls"
-      class="container-fluid carousel slide my-5 py-4 bg-carrousel"
+      class="container-fluid carousel slide py-5 bg-carrousel"
       data-ride="carousel"
+      data-interval="2000"
     >
       <div class="carousel-inner">
         <h1 class="py-4 tituloPrincipal">Recintos disponibles</h1>

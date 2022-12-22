@@ -1,2 +1,12 @@
 import HomePage from "./Home";
-export { HomePage };
+import InicioSesionPage from "./InicioUsuario";
+import ReservePage from "./ReservePage";
+import RegistroPage from "./RegistroUsuario";
+import PagoReservaPage from "./PagoReserva";
+export {
+  HomePage,
+  InicioSesionPage,
+  ReservePage,
+  RegistroPage,
+  PagoReservaPage,
+};

@@ -9,9 +9,11 @@ const initiaUser = {
   phonenumber: "",
   rut: "",
   username: "",
-  // rolUser: { id: "3" },
+  rolUser:{
+    id: 3
+  }
 };
-// agregale al componente FormUserComponent un campo con valor por defecto que se llame rolUser y tenga asignado el valor numero 2 y no vea ese campo el usuario cuando haga un post
+
 const FormUserComponent = ({
   userAdd,
   usuarioEditado,
@@ -19,7 +21,7 @@ const FormUserComponent = ({
   userEdit,
 }) => {
   const [usuario, setUsuario] = useState(initiaUser);
-  const { fullname, correo, password, phonenumber, rut, username } = usuario;
+  const { fullname, correo, password, phonenumber, rut, username, rolUser } = usuario;
 
   useEffect(() => {
     if (usuarioEditado !== null) {
@@ -32,7 +34,9 @@ const FormUserComponent = ({
         phonenumber: "",
         rut: "",
         username: "",
-        //rolUser: { id: "3" },
+        rolUser:{
+          id: 3
+        }      
       });
     }
   }, [usuarioEditado]);
@@ -46,22 +50,30 @@ const FormUserComponent = ({
   };
   return (
     <>
-      <div class="container-fluid bg-form">
-        <h1 class="text-center py-3">Registro</h1>
-
+      <div class="container-fluid py-5 bg-form">
         <form
-          id="formulario  "
-          class="container bg-light border-radius col-lg-6 col-12 my-5 py-3"
+          id="formulario my-5 py-3 "
+          class="container bg-light border-radius col-lg-6 col-12"
         >
+          <h3 class="card-title">
+            <br />
+            <span>Registro</span>
+            <span id="exclamacion">!</span>
+            <br />
+          </h3>
+          <div id="textosubtitulo" class="form-text">
+            Registrarte te permite realizar reservas, pagar, ceder la reserva a
+            otro, y revisar el código QR de la reserva.
+          </div>
           <div class="mb-3 pb-2 pt-5 mx-3">
             <label for="exampleInputNombre" class="form-label">
-              Nombre:
+              Nombre y Apellidos:<abbr aria-label="required">*</abbr>
             </label>
             <input
               type="text"
               class="form-control"
               id="exampleInputNombre"
-              placeholder="Ingrese aquí su nombre"
+              placeholder="Ingrese aquí su nombre y apellidos"
               aria-describedby="nombreHelp"
               name="fullname"
               value={fullname}
@@ -69,30 +81,12 @@ const FormUserComponent = ({
               required
             />
             <div id="nombreHelp" class="form-text">
-              Nunca compartiremos su correo electrónico con nadie.
+              Nunca compartiremos sus datos con nadie.
             </div>
           </div>
-          {/* <div class="mb-3 py-2 mx-3">
-            <label for="exampleInputRol" class="form-label">
-              Rol:
-            </label>
-            <select
-              class="form-control"
-              id="exampleInputRol"
-              name="rolUser"
-              value={rolUser.id}
-              onChange={handleInputChange}
-            >
-              {rolList.map((rol) => (
-                <option key={rol.id} value={rol.id}>
-                  {rol.name}
-                </option>
-              ))}
-            </select>
-          </div> */}
           <div class="mb-3 py-2 mx-3">
             <label for="exampleInputUsername" class="form-label">
-              Username:
+              Username:<abbr aria-label="required">*</abbr>
             </label>
             <input
               type="text"
@@ -105,13 +99,26 @@ const FormUserComponent = ({
               onChange={handleInputChange}
               required
             />
-            <div id="usernameHelp" class="form-text">
-              Nunca compartiremos su correo electrónico con nadie.
-            </div>
+          </div>
+          <div class="mb-3 py-2 mx-3 d-none">
+            <label for="exampleInputUsername" class="form-label ">
+              id:<abbr aria-label="required">*</abbr>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputUsername"
+              placeholder="Ingrese aquí su username"
+              aria-describedby="usernameHelp"
+              name="rolUser"
+              value={rolUser.id}
+              onChange={handleInputChange}
+              required
+            />
           </div>
           <div class="mb-3 py-2 mx-3">
             <label for="exampleInputEmail1" class="form-label">
-              Email:
+              Email:<abbr aria-label="required">*</abbr>
             </label>
             <input
               type="email"
@@ -124,13 +131,10 @@ const FormUserComponent = ({
               onChange={handleInputChange}
               required
             />
-            <div id="emailHelp" class="form-text">
-              Nunca compartiremos su correo electrónico con nadie.
-            </div>
           </div>
           <div class="mb-3 py-2 mx-3">
             <label for="exampleInputRut" class="form-label">
-              Rut:
+              Rut:<abbr aria-label="required">*</abbr>
             </label>
             <input
               type="text"
@@ -143,33 +147,27 @@ const FormUserComponent = ({
               onChange={handleInputChange}
               required
             />
-            <div id="rutHelp" class="form-text">
-              Nunca compartiremos su correo electrónico con nadie.
-            </div>
           </div>
           <div class="mb-3 py-2 mx-3">
             <label for="exampleInputTel" class="form-label">
-              Telefono:
+              Teléfono:<abbr aria-label="required">*</abbr>
             </label>
             <input
               type="tel"
               class="form-control"
               id="exampleInputTel"
               pattern="[0-9]*"
-              placeholder="Ingrese aquí su telefono"
+              placeholder="Ingrese aquí su teléfono"
               aria-describedby="telHelp"
               name="phonenumber"
               value={phonenumber}
               onChange={handleInputChange}
               required
             />
-            <div id="telHelp" class="form-text">
-              Nunca compartiremos su correo electrónico con nadie.
-            </div>
           </div>
           <div class="mb-3 py-2 mx-3">
             <label for="exampleInputPassword1" class="form-label">
-              Contraseña:
+              Contraseña:<abbr aria-label="required">*</abbr>
             </label>
             <input
               type="password"
@@ -207,9 +205,13 @@ const FormUserComponent = ({
               class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
               onClick={() => userAdd(usuario)}
             >
-              Ingresar usuario
+              Registrar
             </button>
           )}
+          <div class="form-text text-center">
+            ¿Ya tienes cuenta?
+            <a href="FormInicio.jsx">Inicia sesión</a>
+          </div>
 
           {usuarioEditado !== null ? (
             <button
@@ -239,7 +241,7 @@ const FormUserComponent = ({
         </form>
       </div>
       <div
-        class="toast align-items-center"
+        class="toast align-items-center mt-2 ms-4"
         role="alert"
         aria-live="assertive"
         aria-atomic="true"

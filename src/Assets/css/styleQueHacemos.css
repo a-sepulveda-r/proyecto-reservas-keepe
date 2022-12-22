@@ -1,0 +1,26 @@
+.icon-quehacemos {
+  position: relative;
+  font-size: 200px;
+  padding: 70px;
+  top: 30px;
+  right: 90px;
+  color: #36205a;
+}
+.texto-info-quehacemos {
+  position: relative;
+  top: -200px;
+  left: 410px;
+  color: #4d307b;
+}
+.texto-info-subinfo {
+  position: relative;
+  top: -170px;
+  left: 410px;
+  color: #36205a;
+}
+.texto-info-subinfo2 {
+  position: relative;
+  top: -170px;
+  left: 410px;
+  color: #36205a;
+}
