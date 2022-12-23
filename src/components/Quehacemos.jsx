@@ -3,26 +3,20 @@ import "../Assets/css/styleQueHacemos.css";
 
 const QuehacemosComponent = () => {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
+    <div class="container my-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 col-12 text-center">
           <i class="icon-quehacemos fa-solid fa-handshake-simple"></i>
-          <h1 class="texto-info-quehacemos">
-            <strong>¿Qué hacemos?</strong>
+        </div>
+
+        <div class="col-lg-6 col-12">
+          <h1 class="texto-info-quehacemos py-3 ">
+            <strong className="">¿Qué hacemos?</strong>
           </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="texto-info-subinfo col-12">
-          <h5>
+          <h5 className="texto-col-derecha mx-auto">
             Te ayudamos a poder reservar tu lugar favorito al instante. Explora
-            las
+            las múltiples opciones que tenemos para ofrecerte.
           </h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="texto-info-subinfo2 col-12">
-          <h5>múltiples opciones que tenemos para ofrecerte.</h5>
         </div>
       </div>
     </div>
