@@ -14,8 +14,8 @@ function Imagen2() {
       <Card.Img src={estadio} alt="Card image" style={styles.imagenfull} />
       <Card.ImgOverlay>
         <Card.Title>Cancha de Fútbol Chacabuco</Card.Title>
-        <Card.Text>Cancha de fútbol compatible con niños.</Card.Text>
         <Card.Text>Horario: Lun a Viernes. 8-23PM</Card.Text>
+        <Card.Text></Card.Text>
       </Card.ImgOverlay>
     </Card>
   );

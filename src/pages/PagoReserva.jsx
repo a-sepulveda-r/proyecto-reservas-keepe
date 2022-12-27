@@ -34,6 +34,12 @@ const PagoReservaPage = () => {
           <h2 class="tituloblanco">Cancha de Fútbol Chacabuco</h2>
         </div>
 
+        <div>
+          <h3 class="tituloblanco2">Av. Fermín Vivaceta 1372, Independencia, Región Metropolitana</h3>
+        </div>
+
+        
+
         <div className="tarjetaimagen">
           <Imagen2 className="tarjetaindividual" />
           <Imagen1 className="pb-5 mb-5" />

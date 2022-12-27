@@ -10,6 +10,15 @@
   
 }
 
+.tituloblanco2 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 10rem;
+  margin-top: 0rem;
+  font-size: medium;
+  
+}
+
 .color-nav {
   background-color: 'orange';
 }
