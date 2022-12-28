@@ -27,22 +27,3 @@ export default function RegistroExitosoComponent() {
     </div>
   );
 }
-
-// <div class="container">
-//   <div class="card-body border-0">
-//     <h5 class="retext text-center mt-5">Reserva Exitosa!</h5>
-//     <div
-//       className="card mx-auto mt-3 mb-5  border-0"
-//       style={{ width: "18rem" }}
-//     >
-//       <button type="button" class="raquiboton p-0">
-//         <img
-//           src={keepelogo2}
-//           className="card-img-top rounded-circle"
-//           alt="image"
-//         />
-//         <h5 class="retext2 text-center">Ir a reservas</h5>
-//       </button>
-//     </div>
-//   </div>
-// </div>

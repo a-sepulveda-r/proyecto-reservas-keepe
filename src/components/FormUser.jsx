@@ -201,7 +201,7 @@ const FormUserComponent = ({
               Editar usuario
             </button>
           ) : (
-            <a href="/pagoreserva">
+            <a href="/registroexitoso">
               <button
                 type="button"
                 class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
