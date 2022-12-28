@@ -14,7 +14,7 @@ const initiaUser = {
   },
 };
 
-const FormUserComponent = ({
+const RegistroAdminComponent = ({
   userAdd,
   usuarioEditado,
   setUsuarioEditado,
@@ -58,7 +58,7 @@ const FormUserComponent = ({
         >
           <h3 class="card-title">
             <br />
-            <span>Registro</span>
+            <span>Registro Admin</span>
             <span id="exclamacion">!</span>
             <br />
           </h3>
@@ -102,7 +102,7 @@ const FormUserComponent = ({
             />
           </div>
           <div class="mb-3 py-2 mx-3 d-none">
-            <label for="exampleInputUsername" class="form-label ">
+            <label for="exampleInputUsername" class="form-label">
               id:<abbr aria-label="required">*</abbr>
             </label>
             <input
@@ -181,6 +181,57 @@ const FormUserComponent = ({
               required
             />
           </div>
+          <div class="mb-3 py-2 mx-3">
+            <label for="exampleInputTel" class="form-label">
+              Nombre Recinto:<abbr aria-label="required">*</abbr>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputTel"
+              pattern="[0-9]*"
+              placeholder="Ingrese aquí su teléfono"
+              aria-describedby="telHelp"
+              name="recinto"
+              //value={recinto}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div class="mb-3 py-2 mx-3">
+            <label for="exampleInputTel" class="form-label">
+              Tipo Lugar:<abbr aria-label="required">*</abbr>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputTel"
+              pattern="[0-9]*"
+              placeholder="Ingrese aquí su teléfono"
+              aria-describedby="telHelp"
+              name="tipoRecinto"
+              //value={tiporecinto}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div class="mb-3 py-2 mx-3">
+            <label for="exampleInputTel" class="form-label">
+              Dirección:<abbr aria-label="required">*</abbr>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputTel"
+              pattern="[0-9]*"
+              placeholder="Ingrese aquí su teléfono"
+              aria-describedby="telHelp"
+              name="direccion"
+              //value={direccion}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
           <div class="mb-3 form-check py-2 mx-3">
             <input
               type="checkbox"
@@ -201,15 +252,13 @@ const FormUserComponent = ({
               Editar usuario
             </button>
           ) : (
-            <a href="/pagoreserva">
-              <button
-                type="button"
-                class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
-                onClick={() => userAdd(usuario)}
-              >
-                Registrar
-              </button>
-            </a>
+            <button
+              type="button"
+              class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
+              onClick={() => userAdd(usuario)}
+            >
+              Registrar
+            </button>
           )}
           <div class="form-text text-center">
             ¿Ya tienes cuenta?
@@ -263,4 +312,4 @@ const FormUserComponent = ({
   );
 };
 
-export default FormUserComponent;
+export default RegistroAdminComponent;

@@ -1,4 +1,4 @@
-import { joinPaths } from "@remix-run/router";
+//import { joinPaths } from "@remix-run/router";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
@@ -8,6 +8,9 @@ import {
   RegistroPage,
   PagoReservaPage,
   MisionVisionPage,
+  RegistroAdminPage,
+  TicketPage,
+  RegistroExitosoPage,
 } from "./pages";
 
 const App = () => {
@@ -20,6 +23,9 @@ const App = () => {
         <Route path="/registro" element={<RegistroPage />} />
         <Route path="/pagoreserva" element={<PagoReservaPage />} />
         <Route path="/misionyvision" element={<MisionVisionPage />} />
+        <Route path="/registroadmin" element={<RegistroAdminPage />} />
+        <Route path="/ticket" element={<TicketPage />} />
+        <Route path="/registroexitoso" element={<RegistroExitosoPage />} />
       </Routes>
     </BrowserRouter>
   );

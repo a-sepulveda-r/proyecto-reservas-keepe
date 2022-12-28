@@ -1,10 +1,10 @@
 import React from "react";
 import "../Assets/css/styleCardPersonal.css";
-import cardBeli from "../Assets/IMG/cardBeli.png";
-import cardAlfo from "../Assets/IMG/cardAlfo.png";
-import cardAri from "../Assets/IMG/cardAri.png";
-import cardFran from "../Assets/IMG/cardFran.png";
-import cardCono from "../Assets/IMG/cardCono.png";
+import beli from "../Assets/IMG/beli.png";
+import alfo from "../Assets/IMG/alfo.png";
+import ari from "../Assets/IMG/ari.png";
+import fran from "../Assets/IMG/fran.png";
+import cono from "../Assets/IMG/cono.png";
 import iconoLinkedIn from "../Assets/IMG/iconoLinkedIn.png";
 
 const CardPersonalComponent = () => {
@@ -18,7 +18,7 @@ const CardPersonalComponent = () => {
           <div class="row">
             <div className="col-8">
               <img
-                src={cardBeli}
+                src={beli}
                 alt="Foto del rostro de la persona 1"
                 class="mx-auto d-block pb-5 pt-2 bg-image"
               />
@@ -47,7 +47,7 @@ const CardPersonalComponent = () => {
           <div class="row">
             <div className="col-8">
               <img
-                src={cardAlfo}
+                src={alfo}
                 alt="Foto del rostro de la persona 1"
                 class="mx-auto d-block pb-5 pt-2 bg-image"
               />
@@ -75,7 +75,7 @@ const CardPersonalComponent = () => {
           <div class="row">
             <div className="col-8">
               <img
-                src={cardAri}
+                src={ari}
                 alt="Foto del rostro de la persona 1"
                 class="mx-auto d-block pb-5 pt-2 bg-image"
               />
@@ -106,7 +106,7 @@ const CardPersonalComponent = () => {
           <div class="row">
             <div className="col-8">
               <img
-                src={cardFran}
+                src={fran}
                 alt="Foto del rostro de la persona 1"
                 class="mx-auto d-block pb-5 pt-2 bg-image"
               />
@@ -137,7 +137,7 @@ const CardPersonalComponent = () => {
           <div class="row">
             <div className="col-8">
               <img
-                src={cardCono}
+                src={cono}
                 alt="Foto del rostro de la persona 1"
                 class="mx-auto d-block pb-5 pt-2 bg-image"
               />

@@ -31,14 +31,14 @@ const PagoReservaPage = () => {
         <img src={fotocabecera} alt="Logo" />
 
         <div>
-          <h2 class="tituloblanco">Cancha de Fútbol Chacabuco</h2>
+          <h2 class="tituloblanco">Cancha de Basketball Dragones</h2>
         </div>
 
         <div>
-          <h3 class="tituloblanco2">Av. Fermín Vivaceta 1372, Independencia, Región Metropolitana</h3>
+          <h3 class="tituloblanco2">
+            Maimónides 530, Santiago, Región Metropolitana
+          </h3>
         </div>
-
-        
 
         <div className="tarjetaimagen">
           <Imagen2 className="tarjetaindividual" />
@@ -66,7 +66,7 @@ const PagoReservaPage = () => {
         </div>
 
         <div className="botonpagarcontenedor">
-          <Button href="#" className="botonpagar">
+          <Button href="/ticket" className="botonpagar">
             Pagar y Reservar
           </Button>
         </div>

@@ -1,47 +1,33 @@
 //import "./boton";
 import "../Assets/css/stylesForm.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-const initiaUser = {
-  fullname: "",
-  correo: "",
-  password: "",
-  phonenumber: "",
-  rut: "",
-  username: "",
-  // rol_user_id: 2, ACACACACACACACACACACACAC
-};
+// const initiaUser = {
+//   fullname: "",
+//   correo: "",
+//   password: "",
+//   phonenumber: "",
+//   rut: "",
+//   username: "",
+//   // rol_user_id: 2, ACACACACACACACACACACACAC
+// };
 
-const FormInicioComponent = ({
-  userAdd,
-  usuarioEditado,
-  setUsuarioEditado,
-  userEdit,
-}) => {
-  const [usuario, setUsuario] = useState(initiaUser);
-  const { fullname, correo, password, phonenumber, rut, username } = usuario;
+const FormInicioComponent = () => {
+  const [password, setPassword] = useState("");
 
-  useEffect(() => {
-    if (usuarioEditado !== null) {
-      setUsuario(usuarioEditado);
-    } else {
-      setUsuario({
-        fullname: "",
-        correo: "",
-        password: "",
-        phonenumber: "",
-        rut: "",
-        username: "",
-      });
-    }
-  }, [usuarioEditado]);
+  const handleChange = (event) => {
+    setPassword(event.target.value);
+  };
 
-  const handleInputChange = (e) => {
-    const changedFormValue = {
-      ...usuario,
-      [e.target.name]: e.target.value,
-    };
-    setUsuario(changedFormValue);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch("http://localhost:8080/login", {
+      method: "POST",
+      body: JSON.stringify({ password }),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((response) => response.text())
+      .then((encryptedPassword) => console.log(encryptedPassword));
   };
   return (
     <>
@@ -49,6 +35,7 @@ const FormInicioComponent = ({
         <form
           id="formulario my-5 py-5  "
           class="container bg-light border-radius col-lg-6 col-12"
+          onSubmit={handleSubmit}
         >
           <h3 class="card-title py-3">
             <br />
@@ -70,8 +57,8 @@ const FormInicioComponent = ({
               placeholder="Ingrese aquí su email"
               aria-describedby="emailHelp"
               name="correo"
-              value={correo}
-              onChange={handleInputChange}
+              // value={correo}
+              // onChange={handleInputChange}
               required
             />
             <div id="emailHelp" class="form-text">
@@ -89,44 +76,22 @@ const FormInicioComponent = ({
               placeholder="Ingrese aquí su constraseña"
               name="password"
               value={password}
-              onChange={handleInputChange}
+              onChange={handleChange}
               required
             />
           </div>
-          {usuarioEditado !== null ? (
+          <a href="/pagoreserva">
             <button
               type="button"
-              class="btn btn-success"
-              onClick={() => userEdit(usuario)}
+              class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
+              href="/pagoreserva"
             >
-              Editar usuario
+              Iniciar Sesión
             </button>
-          ) : (
-            <a href="/pagoreserva">
-              <button
-                type="button"
-                class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
-                href="/pagoreserva"
-                onClick={() => userAdd(usuario)}
-              >
-                Iniciar Sesión
-              </button>
-            </a>
-          )}
+          </a>
           <div class="form-text text-center mb-4">
             ¿No te has registrado? <a href="/registro">Registrate</a>
           </div>
-          {usuarioEditado !== null ? (
-            <button
-              type="button"
-              class="btn btn-danger"
-              onClick={() => setUsuarioEditado(null)}
-            >
-              Cancelar
-            </button>
-          ) : (
-            <></>
-          )}
           <br />
           <button
             id="btnCargando"

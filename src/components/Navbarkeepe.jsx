@@ -35,7 +35,7 @@ const NavbarKeepeComponent = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a href="#servicios" class="nav-link textoNav">
+              <a href="/registroadmin" class="nav-link textoNav">
                 Publicar
               </a>
             </li>

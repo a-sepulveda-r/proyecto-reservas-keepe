@@ -3,47 +3,7 @@ import "../Assets/css/stylesForm.css";
 import qrCode from "../Assets/IMG/qrCode.png";
 import React, { useState, useEffect } from "react";
 
-const initiaUser = {
-  fullname: "",
-  correo: "",
-  password: "",
-  phonenumber: "",
-  rut: "",
-  username: "",
-  // rol_user_id: 2, ACACACACACACACACACACACAC
-};
-
-const TicketComponent = ({
-  userAdd,
-  usuarioEditado,
-  setUsuarioEditado,
-  userEdit,
-}) => {
-  const [usuario, setUsuario] = useState(initiaUser);
-  const { fullname, correo, password, phonenumber, rut, username } = usuario;
-
-  useEffect(() => {
-    if (usuarioEditado !== null) {
-      setUsuario(usuarioEditado);
-    } else {
-      setUsuario({
-        fullname: "",
-        correo: "",
-        password: "",
-        phonenumber: "",
-        rut: "",
-        username: "",
-      });
-    }
-  }, [usuarioEditado]);
-
-  const handleInputChange = (e) => {
-    const changedFormValue = {
-      ...usuario,
-      [e.target.name]: e.target.value,
-    };
-    setUsuario(changedFormValue);
-  };
+const TicketComponent = () => {
   return (
     <>
       <div class="container-fluid py-5 bg-form">
@@ -74,53 +34,28 @@ const TicketComponent = ({
           <div>
             <h5>Tus datos son:</h5>
             <div class="border border-success rounded p-2 mb-2 border-opacity-75">
-              Manuel Manolito Mandarin
+              Manuel Sánchez
             </div>
             <div class="border border-success rounded p-2 mb-2 border-opacity-75">
               Rut: 14329739-4
             </div>
             <div class="border border-success rounded p-2 mb-2 border-opacity-75">
-              Cancha de Futbol Chacabuco
+              Cancha de Basketball Dragones
             </div>
             <div class="border border-success rounded p-2 mb-2 border-opacity-75">
               4 de Enero de 2023 - 19:00 a 20:00
             </div>
           </div>
-
-          {usuarioEditado !== null ? (
-            <button
-              type="button"
-              class="btn btn-success"
-              onClick={() => userEdit(usuario)}
-            >
-              Editar usuario
-            </button>
-          ) : (
-            <button
-              id="imprimirTicket"
-              type="button"
-              class="btn btn-lg w-100 py-3 mb-3 botonIngresar"
-              onClick={() => userAdd(usuario)}
-            >
-              Imprimir Ticket
-            </button>
-          )}
-          <div class="form-text text-center">
+          <button
+            id="imprimirTicket"
+            type="button"
+            class="btn btn-lg w-100 py-3 mb-3 mt-2 botonIngresar"
+          >
+            Imprimir Ticket
+          </button>
+          <div class="form-text text-center py-4 mb-5">
             <a href="FormInicio.jsx">Puedes ver este ticket en Tus Reservas</a>
           </div>
-
-          {usuarioEditado !== null ? (
-            <button
-              type="button"
-              class="btn btn-danger"
-              onClick={() => setUsuarioEditado(null)}
-            >
-              Cancelar
-            </button>
-          ) : (
-            <></>
-          )}
-          <br />
           <button
             id="btnCargando"
             class="btn btn-secondary w-100 d-none"

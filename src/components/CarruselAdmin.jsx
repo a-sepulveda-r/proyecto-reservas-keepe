@@ -6,7 +6,7 @@ import imgRecinto9 from "../Assets/IMG/imgRecinto9.jpg";
 import logoCampana from "../Assets/IMG/logoCampana.png";
 import logoUsuario from "../Assets/IMG/logoUsuario.png";
 
-const CarruselMainComponent = () => {
+const CarruselAdminComponent = () => {
   return (
     <div
       id="maincarrusel"
@@ -28,26 +28,26 @@ const CarruselMainComponent = () => {
             <div class="row px-2">
               <div class="col-sm-12 col-12 col-lg-6 col-md-6 pt-5">
                 <h1 class="titulo1">
-                  TU
+                  TU{" "}
                   <span class="img-logo">
                     <img src={logoCampana} alt="logo campana" />
-                  </span>
+                  </span>{" "}
                 </h1>
                 <div class="col-sm-12 col-12 col-lg-6 col-md-6 pt-5">
-                  <h1 class="titulo2">RESERVA</h1>
+                  <h1 class="titulo2">PUBLICACIÓN</h1>
                 </div>
                 <div class="col-sm-12 col-12 col-lg-6 col-md-6 pt-5">
                   <h1 class="titulo3">PERFECTA</h1>
                 </div>
                 <p class="texto-info col-sm-12 col-12 ">
-                  Con <strong>Keepe</strong> podrás reservar tu recinto
-                  <strong> FAVORITO</strong>
+                  Con <strong>Keepe</strong> podrás publicar tu recinto{" "}
+                  <strong>FAVORITO</strong>
                 </p>
                 <p class="texto-info2 col-sm-12 col-12 ">
-                  en donde quieras y revisar los mejores precios.
+                  en donde quieras y administrar tus reservas.
                 </p>
                 <button class="boton-reservar" type="btn">
-                  <span class="boton-reservar-texto">Reserva aquí</span>
+                  <span class="boton-reservar-texto">Publica aquí</span>
                 </button>
               </div>
               <div class="container col-sm-12 col-12 col-lg-6 col-md-6 pt-5">
@@ -70,4 +70,4 @@ const CarruselMainComponent = () => {
     </div>
   );
 };
-export default CarruselMainComponent;
+export default CarruselAdminComponent;

@@ -15,19 +15,15 @@ const styles = {
 function Imagen1() {
   return (
     <Card className="bg-dark text-white">
-      <Card.Img src={googlemaps} style={styles.imagenfull} alt="Card image" />
-      <Card.ImgOverlay>
-        <Alert.Link
-          href="https://www.google.com/maps/place/Hipódromo+Chile/@-33.4094399,-70.6641251,14z/data=!4m5!3m4!1s0x0:0x9ebd3e6263751d47!8m2!3d-33.4047827!4d-70.6664425"
-          style={styles.textoazul}
-        >
-          Ver en Google Maps
-        </Alert.Link>
-        <Card.Title></Card.Title>
-        <Card.Text style={styles.textoazul}>
-          
-        </Card.Text>
-      </Card.ImgOverlay>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212967.2010134411!2d-70.62812206766979!3d-33.485437693883775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c565b67e6037%3A0x11c88eba7457c3b1!2sCanchas%20Basketball!5e0!3m2!1ses!2scl!4v1672257198838!5m2!1ses!2scl"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
     </Card>
   );
 }

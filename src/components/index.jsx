@@ -14,6 +14,10 @@ import CalendarPretty from "./CalendarPretty";
 import ReservaTuHora from "./ReservaTuHora";
 import Imagen2 from "./Imagen2";
 import MisionVisionComponent from "./MisionVision";
+import CarruselAdminComponent from "./CarruselAdmin";
+import ComoAyudamosComponent from "./ComoTeAyudados";
+import RegistroAdminComponent from "./RegistroAdmin";
+import RegistroExitosoComponent from "./RegistroExitoso";
 
 export {
   NavbarKeepeComponent,
@@ -32,4 +36,8 @@ export {
   ReservaTuHora,
   Imagen2,
   MisionVisionComponent,
+  CarruselAdminComponent,
+  ComoAyudamosComponent,
+  RegistroAdminComponent,
+  RegistroExitosoComponent,
 };

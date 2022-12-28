@@ -5,7 +5,7 @@ import logoKeepe from "../Assets/IMG/keepelogo.png";
 
 const NavbarKeepeComponent = () => {
   return (
-    <nav class="navbar navbar-expand-lg colorNav" id="navbar-example">
+    <nav class="navbar navbar-expand-lg colorNavAdmin" id="navbar-example">
       <div class="container">
         <a href="/" class="navbar-brand">
           <img class="icononav" src={logoKeepe} alt="" />
@@ -25,23 +25,23 @@ const NavbarKeepeComponent = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mb-2 mx-lg-auto mx-xs-0 textoNav">
             <li class="nav-item">
-              <a href="#Reservar" class="nav-link textoNav" aria-current="page">
+              <a href="/" class="nav-link textoNav" aria-current="page">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/reserva" class="nav-link textoNav" aria-current="page">
                 Reservar
               </a>
             </li>
             <li class="nav-item">
-              <a href="#servicios" class="nav-link textoNav">
+              <a href="/registroadmin" class="nav-link textoNav">
                 Publicar
               </a>
             </li>
             <li class="nav-item">
-              <a href="#comentarios" class="nav-link textoNav">
-                Contacto
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#suscribete" class="nav-link textoNav">
-                Soporte
+              <a href="/misionyvision" class="nav-link textoNav">
+                Conócenos
               </a>
             </li>
             <li class="nav-item dropdown dropdownLi">
@@ -65,29 +65,25 @@ const NavbarKeepeComponent = () => {
                 }}
               >
                 <li>
-                  <a
-                    class="dropdown-item iancl"
-                    target="_blank"
-                    href="https://chat.openai.com/chat"
-                  >
-                    Mis Reservas
+                  <a class="dropdown-item iancl" href="/iniciarsesion">
+                    Iniciar Sesión
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item iancl" target="_blank" href="/">
-                    Reservar
+                  <a class="dropdown-item iancl" href="/registro">
+                    Registrate
                   </a>
                 </li>
-                <li>
-                  <a class="dropdown-item iancl" target="_blank" href="/">
-                    Ver Tickets
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item iancl" target="_blank" href="/">
-                    Mi Perfil
-                  </a>
-                </li>
+                {/* <li>
+                <a class="dropdown-item iancl" target="_blank" href="/">
+                  Ver Tickets
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item iancl" target="_blank" href="/">
+                  Mi Perfil
+                </a>
+              </li> */}
               </ul>
             </li>
           </ul>

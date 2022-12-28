@@ -9,7 +9,7 @@ export default function BootCard() {
           <button class="raquiImagen1 w-100" href="#">
             <a href="/iniciarsesion" class="ancla-style">
               <h1 class="raquiTextoImagen">
-                Club de Basketball "Dragones" - Ñuñoa
+                Club de Basketball "Dragones" - Santiago
               </h1>
             </a>
           </button>
