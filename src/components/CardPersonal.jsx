@@ -9,11 +9,11 @@ import iconoLinkedIn from "../Assets/IMG/iconoLinkedIn.png";
 
 const CardPersonalComponent = () => {
   return (
-    <div class="row justify-content-center mb-5">
-      <h1 className="text-center titulo-principal-color ">
+    <div class="row justify-content-center margin-bottom">
+      <h1 className="text-center titulo-principal-color pt-5 ">
         ¡Estas a cargo de los mejores!
       </h1>
-      <div class="col-lg-2 col-xs-4 col-medidas mb-2">
+      <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
@@ -38,11 +38,11 @@ const CardPersonalComponent = () => {
           </div>
           <h3 class="card-title text-center mt-2 titulo-color">Belén Oyarce</h3>
           <h3 class="card-title text-center mt-2 mb-5 titulo-color2">
-            “Scrum Master”
+            Scrum Master Developer
           </h3>
         </div>
       </div>
-      <div class="col-lg-2 col-xs-4 col-medidas mb-2">
+      <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
@@ -66,11 +66,11 @@ const CardPersonalComponent = () => {
             Alfonso Vilches
           </h3>
           <h3 class="card-title text-center mt-2 mb-5 titulo-color2">
-            “Product Owner”
+            Product Owner Developer
           </h3>
         </div>
       </div>
-      <div class="col-lg-2 col-xs-4 col-medidas mb-2">
+      <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
@@ -97,11 +97,11 @@ const CardPersonalComponent = () => {
             Ariel Sepúlveda
           </h3>
           <h3 class="card-title text-center mt-2 mb-5 titulo-color2">
-            “Developer”
+            Full Stack <br /> Developer
           </h3>
         </div>
       </div>
-      <div class="col-lg-2 col-xs-4 col-medidas mb-2">
+      <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
@@ -128,11 +128,11 @@ const CardPersonalComponent = () => {
             Francisco Navarro
           </h3>
           <h3 class="card-title text-center mt-2 mb-5 titulo-color2">
-            “Developer”
+            UX UI <br /> Developer
           </h3>
         </div>
       </div>
-      <div class="col-lg-2 col-xs-4 col-medidas mb-5 mb-2">
+      <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
@@ -159,7 +159,7 @@ const CardPersonalComponent = () => {
             Constanza Sánchez
           </h3>
           <h3 class="card-title text-center mt-2 mb-5 titulo-color2">
-            “Developer”
+            UX UI <br /> Front End Developer
           </h3>
         </div>
       </div>

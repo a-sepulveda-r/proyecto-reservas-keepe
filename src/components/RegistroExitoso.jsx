@@ -6,14 +6,16 @@ export default function RegistroExitosoComponent() {
   return (
     <div class="container">
       <div class="card-body border-0 mb-5">
-        <h5 class="retext text-center mt-5">Resgistro Exitoso!</h5>
+        <h5 class="retext text-center mt-5">Registro Exitoso!</h5>
         <div className="card mx-auto border-0" style={{ width: "18rem" }}>
           <button type="button" className="btn btn-link p-0">
-            <img
-              src={keepelogo2}
-              className="card-img-top rounded-circle mx-auto d-block"
-              alt="image"
-            />
+            <a href="/pagoreserva" className="text-decoration-none">
+              <img
+                src={keepelogo2}
+                className="card-img-top rounded-circle mx-auto d-block"
+                alt="image"
+              />{" "}
+            </a>
           </button>
           <div className="card-body text-center">
             <button className="reservabuton">

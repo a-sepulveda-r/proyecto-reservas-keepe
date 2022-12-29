@@ -1,5 +1,5 @@
 .card {
-  height: 315px;
+  height: 355px;
 }
 .bg-card {
   background: #3c1f79;
@@ -28,7 +28,7 @@
   color: #ffffff;
 }
 .col-medidas {
-  width: 271.62px;
+  width: 290px;
   height: 315px;
 }
 
@@ -48,4 +48,8 @@
   text-align: center;
 
   color: #4d307b;
+}
+
+.margin-bottom {
+  margin-bottom: 100px;
 }
