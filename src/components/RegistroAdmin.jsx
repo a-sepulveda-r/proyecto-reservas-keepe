@@ -1,6 +1,7 @@
 //import "./boton";
 import "../Assets/css/stylesForm.css";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const initiaUser = {
   fullname: "",
@@ -262,7 +263,7 @@ const RegistroAdminComponent = ({
           )}
           <div class="form-text text-center">
             ¿Ya tienes cuenta?
-            <a href="FormInicio.jsx">Inicia sesión</a>
+            <Link to="FormInicio.jsx">Inicia sesión</Link>
           </div>
 
           {usuarioEditado !== null ? (

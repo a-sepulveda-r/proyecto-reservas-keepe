@@ -9,6 +9,7 @@ import {
 import CalendarPretty from "../components/CalendarPretty";
 import "../Assets/css/stylePagoReserva.css";
 import fotocabecera from "../Assets/IMG/fotocabecera.png";
+import { Link } from "react-router-dom";
 
 const PagoReservaPage = () => {
   return (
@@ -66,9 +67,9 @@ const PagoReservaPage = () => {
         </div>
 
         <div className="botonpagarcontenedor">
-          <Button href="/ticket" className="botonpagar">
-            Pagar y Reservar
-          </Button>
+          <Link to="/ticket">
+            <Button className="botonpagar">Pagar y Reservar</Button>
+          </Link>
         </div>
       </div>
 

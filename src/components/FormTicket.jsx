@@ -2,6 +2,7 @@
 import "../Assets/css/stylesForm.css";
 import qrCode from "../Assets/IMG/qrCode.png";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const TicketComponent = () => {
   return (
@@ -54,7 +55,9 @@ const TicketComponent = () => {
             Imprimir Ticket
           </button>
           <div class="form-text text-center py-4 mb-5">
-            <a href="FormInicio.jsx">Puedes ver este ticket en Tus Reservas</a>
+            <Link to="FormInicio.jsx">
+              Puedes ver este ticket en Tus Reservas
+            </Link>
           </div>
           <button
             id="btnCargando"

@@ -1,6 +1,7 @@
 //import "./boton";
 import "../Assets/css/stylesForm.css";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // const initiaUser = {
 //   fullname: "",
@@ -80,17 +81,17 @@ const FormInicioComponent = () => {
               required
             />
           </div>
-          <a href="/pagoreserva">
+          <Link to="/pagoreserva">
             <button
               type="button"
               class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
-              href="/pagoreserva"
+              to="/pagoreserva"
             >
               Iniciar Sesión
             </button>
-          </a>
+          </Link>
           <div class="form-text text-center mb-4">
-            ¿No te has registrado? <a href="/registro">Registrate</a>
+            ¿No te has registrado? <Link to="/registro">Registrate</Link>
           </div>
           <br />
           <button

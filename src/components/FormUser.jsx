@@ -1,6 +1,7 @@
 //import "./boton";
 import "../Assets/css/stylesForm.css";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const initiaUser = {
   fullname: "",
@@ -201,7 +202,7 @@ const FormUserComponent = ({
               Editar usuario
             </button>
           ) : (
-            <a href="/registroexitoso">
+            <Link to="/registroexitoso">
               <button
                 type="button"
                 class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
@@ -209,11 +210,11 @@ const FormUserComponent = ({
               >
                 Registrar
               </button>
-            </a>
+            </Link>
           )}
           <div class="form-text text-center">
             ¿Ya tienes cuenta?
-            <a href="FormInicio.jsx">Inicia sesión</a>
+            <a to="FormInicio.jsx">Inicia sesión</a>
           </div>
 
           {usuarioEditado !== null ? (
@@ -464,7 +465,7 @@ export default FormUserComponent;
 //               Editar usuario
 //             </button>
 //           ) : (
-//             <a href="/registroexitoso">
+//             <a to="/registroexitoso">
 //               <button
 //                 type="button"
 //                 class="btn btn-lg btn-primary w-100 py-3 mb-3 botonIngresar"
@@ -476,7 +477,7 @@ export default FormUserComponent;
 //           )}
 //           <div class="form-text text-center">
 //             ¿Ya tienes cuenta?
-//             <a href="FormInicio.jsx">Inicia sesión</a>
+//             <a to="FormInicio.jsx">Inicia sesión</a>
 //           </div>
 
 //           {usuarioEditado !== null ? (

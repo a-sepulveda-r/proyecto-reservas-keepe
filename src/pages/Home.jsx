@@ -6,8 +6,6 @@ import {
   FooterComponent,
   PromesasComponent,
   CardPersonalComponent,
-  FormUserComponent,
-  BootCard,
   QuehacemosComponent,
   CarruselMainComponent,
 } from "../components";

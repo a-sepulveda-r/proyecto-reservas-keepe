@@ -6,6 +6,7 @@ import ari from "../Assets/IMG/ari.png";
 import fran from "../Assets/IMG/fran.png";
 import cono from "../Assets/IMG/cono.png";
 import iconoLinkedIn from "../Assets/IMG/iconoLinkedIn.png";
+import { Link } from "react-router-dom";
 
 const CardPersonalComponent = () => {
   return (
@@ -14,7 +15,7 @@ const CardPersonalComponent = () => {
         ¡Estas a cargo de los mejores!
       </h1>
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
-        <div class="card mx-auto my-5 bg-card ">
+        <div class="card mx-auto my-5 bg-card border-color">
           <div class="row">
             <div className="col-8">
               <img
@@ -24,16 +25,16 @@ const CardPersonalComponent = () => {
               />
             </div>
             <div className="col-4 mt-4">
-              <a
+              <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/belén-oyarce-santibáñez/"
+                to="https://www.linkedin.com/in/belén-oyarce-santibáñez/"
               >
                 <img
                   src={iconoLinkedIn}
                   alt="Icono de la persona 1"
                   class="small rounded-circle mx-auto d-block bg-linkedin"
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <h3 class="card-title text-center mt-2 titulo-color">Belén Oyarce</h3>
@@ -53,13 +54,13 @@ const CardPersonalComponent = () => {
               />
             </div>
             <div className="col-4 mt-4">
-              <a target="_blank" href="https://www.linkedin.com/in/alfonsovs/">
+              <Link target="_blank" to="https://www.linkedin.com/in/alfonsovs/">
                 <img
                   src={iconoLinkedIn}
                   alt="Icono de la persona 1"
                   class="small rounded-circle mx-auto d-block bg-linkedin"
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <h3 class="card-title text-center mt-2 titulo-color">
@@ -81,16 +82,16 @@ const CardPersonalComponent = () => {
               />
             </div>
             <div className="col-4 mt-4">
-              <a
+              <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/ariel-sepulveda-596435238/"
+                to="https://www.linkedin.com/in/ariel-sepulveda-596435238/"
               >
                 <img
                   src={iconoLinkedIn}
                   alt="Icono de la persona 1"
                   class="small rounded-circle mx-auto d-block bg-linkedin"
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <h3 class="card-title text-center mt-2 titulo-color">
@@ -112,16 +113,16 @@ const CardPersonalComponent = () => {
               />
             </div>
             <div className="col-4 mt-4">
-              <a
+              <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/francisco-navarro-flores/"
+                to="https://www.linkedin.com/in/francisco-navarro-flores/"
               >
                 <img
                   src={iconoLinkedIn}
                   alt="Icono de la persona 1"
                   class="small rounded-circle mx-auto d-block bg-linkedin"
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <h3 class="card-title text-center mt-2 titulo-color">
@@ -143,16 +144,16 @@ const CardPersonalComponent = () => {
               />
             </div>
             <div className="col-4 mt-4">
-              <a
+              <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/constanza-sanchez-019205181/"
+                to="https://www.linkedin.com/in/constanza-sanchez-019205181/"
               >
                 <img
                   src={iconoLinkedIn}
                   alt="Icono de la persona 1"
                   class="small rounded-circle mx-auto d-block bg-linkedin"
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <h3 class="card-title text-center mt-2 titulo-color">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Assets/css/styleNavbarAdmin.css";
 import logoKeepe from "../Assets/IMG/keepelogo.png";
 //import "./boton";
@@ -7,9 +8,9 @@ const NavbarKeepeComponent = () => {
   return (
     <nav class="navbar navbar-expand-lg colorNavAdmin" id="navbar-example">
       <div class="container">
-        <a href="/" class="navbar-brand">
+        <Link to="/" class="navbar-brand">
           <img class="icononav" src={logoKeepe} alt="" />
-        </a>
+        </Link>
         <span class="iconotext">Keepe</span>
         <button
           class="navbar-toggler"
@@ -25,36 +26,36 @@ const NavbarKeepeComponent = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mb-2 mx-lg-auto mx-xs-0 textoNav">
             <li class="nav-item">
-              <a href="/" class="nav-link textoNav" aria-current="page">
+              <Link to="/" class="nav-link textoNav" aria-current="page">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="/reserva" class="nav-link textoNav" aria-current="page">
+              <Link to="/reserva" class="nav-link textoNav" aria-current="page">
                 Reservar
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="/registroadmin" class="nav-link textoNav">
+              <Link to="/registroadmin" class="nav-link textoNav">
                 Publicar
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="/misionyvision" class="nav-link textoNav">
+              <Link to="/misionyvision" class="nav-link textoNav">
                 Conócenos
-              </a>
+              </Link>
             </li>
             <li class="nav-item dropdown dropdownLi">
-              <a
+              <Link
                 class="btn btn-circle purple-background nav-link dropdown-toggle textoNav center-icon "
-                href="/"
+                to="/"
                 id="navbarScrollingDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <i class="fa fa-user-plus h3"></i>
-              </a>
+              </Link>
               <ul
                 class="dropdown-menu bg-ul"
                 aria-labelledby="navbarScrollingDropdown"
@@ -65,22 +66,22 @@ const NavbarKeepeComponent = () => {
                 }}
               >
                 <li>
-                  <a class="dropdown-item iancl" href="/iniciarsesion">
+                  <Link class="dropdown-item iancl" to="/iniciarsesion">
                     Iniciar Sesión
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item iancl" href="/registro">
+                  <Link class="dropdown-item iancl" to="/registro">
                     Registrate
-                  </a>
+                  </Link>
                 </li>
                 {/* <li>
-                <a class="dropdown-item iancl" target="_blank" href="/">
+                <a class="dropdown-item iancl" target="_blank" to="/">
                   Ver Tickets
                 </a>
               </li>
               <li>
-                <a class="dropdown-item iancl" target="_blank" href="/">
+                <a class="dropdown-item iancl" target="_blank" to="/">
                   Mi Perfil
                 </a>
               </li> */}
