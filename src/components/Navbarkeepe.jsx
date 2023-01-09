@@ -9,7 +9,7 @@ const NavbarKeepeComponent = () => {
     <nav class="navbar navbar-expand-lg colorNav" id="navbar-example">
       <div class="container">
         <Link href="/" class="navbar-brand">
-          <img class="icononav" src={logoKeepe} alt="" />
+          <img class="icononav1" src={logoKeepe} alt="" />
         </Link>
         <span class="iconotext">Keepe</span>
         <button
@@ -24,30 +24,30 @@ const NavbarKeepeComponent = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mb-2 mx-lg-auto mx-xs-0 textoNav">
+          <ul class="navbar-nav mb-2 mx-lg-auto mx-xs-0 textoNav1">
             <li class="nav-item">
-              <Link to="/" class="nav-link textoNav" aria-current="page">
+              <Link to="/" class="nav-link textoNav1" aria-current="page">
                 Inicio
               </Link>
             </li>
             <li class="nav-item">
-              <Link to="/reserva" class="nav-link textoNav" aria-current="page">
+              <Link to="/reserva" class="nav-link textoNav1" aria-current="page">
                 Reservar
               </Link>
             </li>
             <li class="nav-item">
-              <Link to="/registroadmin" class="nav-link textoNav">
+              <Link to="/registroadmin" class="nav-link textoNav1">
                 Publicar
               </Link>
             </li>
             <li class="nav-item">
-              <Link to="/misionyvision" class="nav-link textoNav">
+              <Link to="/misionyvision" class="nav-link textoNav1">
                 Conócenos
               </Link>
             </li>
             <li class="nav-item dropdown dropdownLi">
               <Link
-                class="btn btn-circle purple-background nav-link dropdown-toggle textoNav center-icon "
+                class="btn btn-circle purple-background nav-link dropdown-toggle textoNav1 center-icon "
                 to="/"
                 id="navbarScrollingDropdown"
                 role="button"

@@ -1,5 +1,8 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import {
   Imagen1,
   Imagen2,
@@ -31,6 +34,7 @@ const PagoReservaPage = () => {
 
         <img src={fotocabecera} alt="Logo" />
 
+
         <div>
           <h2 class="tituloblanco">Cancha de Basketball Dragones</h2>
         </div>
@@ -41,10 +45,18 @@ const PagoReservaPage = () => {
           </h3>
         </div>
 
-        <div className="tarjetaimagen">
-          <Imagen2 className="tarjetaindividual" />
-          <Imagen1 className="pb-5 mb-5" />
-        </div>
+        <Container>
+          <Row xs="auto" className="tarjetaimagen">
+            <Col >
+              <Imagen2 className="tarjetaindividual" />
+            </Col>
+            <Col >
+              <Imagen1 className="tarjetaindividual"/>
+            </Col>
+          </Row>
+        </Container>
+
+        
 
         <div>
           <h2 class="tituloblanco">Elige tu fecha</h2>

@@ -187,17 +187,17 @@
 }
 
 .tarjetaimagen {
-  display: flex;
-  justify-content: center;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
   padding-top: 2rem;
 
 }
 
 .tarjetaindividual {
   border-color: white;
-  border-width: 1rem;
-  background-size: cover;
+  width: 500px;
+  padding-right: 0;
+  margin-right: 0;
+
   
 }
