@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Button from "react-bootstrap/Button";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -10,8 +10,9 @@ import {
   ReservaTuHora,
 } from "../components";
 import CalendarPretty from "../components/CalendarPretty";
+import TimeRangeModule from '../components/TimeRangePicker';
 import "../Assets/css/stylePagoReserva.css";
-import fotocabecera from "../Assets/IMG/fotocabecera.png";
+
 import { Link } from "react-router-dom";
 
 const PagoReservaPage = () => {
@@ -32,8 +33,11 @@ const PagoReservaPage = () => {
 
         <NavbarKeepeComponent />
 
-        <img src={fotocabecera} alt="Logo" />
-
+        {/* IMAGEN CABECERA */}
+        <div className="cabecera">
+        {/* <img src={fotocabecera} alt="Logo"  /> */}
+        </div>
+        {/* SECCIÓN DE FOTO Y MAPA */}
 
         <div>
           <h2 class="tituloblanco">Cancha de Basketball Dragones</h2>
@@ -56,27 +60,36 @@ const PagoReservaPage = () => {
           </Row>
         </Container>
 
-        
+        {/* SECCIÓN DE ELEGIR HORARIO Y FECHA */}
 
         <div>
           <h2 class="tituloblanco">Elige tu fecha</h2>
         </div>
 
+
+
         <div className="calendario">
           <CalendarPretty value={new Date()} showDoubleView />
+          
         </div>
+        
 
         <div>
           <h2 class="tituloblanco">Elige tu turno</h2>
         </div>
 
         <div className="eligetuturno">
+
+          <TimeRangeModule />
+
           <div class="container">
             <div class="row">
               <ReservaTuHora />
             </div>
           </div>
         </div>
+
+        {/* BOTON PAGO */}
 
         <div className="botonpagarcontenedor">
           <Link to="/ticket">

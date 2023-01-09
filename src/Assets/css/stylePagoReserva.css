@@ -1,6 +1,33 @@
+p {
+  color: white;
+  font-family: Quicksand;
+  text-align: center;
+}
+
 .fondo {
     background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, #4D307B 100%);
   }
+
+.cabecera {
+  
+    background-image: url("/src/Assets/IMG/basketball-wallpaper-2.jpg");
+    background-size: 150%;
+    background-position: 20px 200px;
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+    -webkit-animation: backgroundScroll 60s linear infinite;
+    animation: backgroundScroll 60s linear infinite;  
+  }
+  @-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -400px 0;}
+    }
+            
+    @keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -400px 0;}
+    }
 
 .tituloblanco {
   color: white;
@@ -187,9 +214,11 @@
 }
 
 .tarjetaimagen {
-  padding-left: 9rem;
-  padding-right: 9rem;
+  padding-left: auto;
+  padding-right: auto;
   padding-top: 2rem;
+  justify-content: center;
+  
 
 }
 

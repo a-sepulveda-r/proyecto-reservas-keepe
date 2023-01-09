@@ -18,6 +18,7 @@ import CarruselAdminComponent from "./CarruselAdmin";
 import ComoAyudamosComponent from "./ComoTeAyudados";
 import RegistroAdminComponent from "./RegistroAdmin";
 import RegistroExitosoComponent from "./RegistroExitoso";
+import TimeRangeModule from "./TimeRangePicker"
 
 export {
   NavbarKeepeComponent,
@@ -40,4 +41,5 @@ export {
   ComoAyudamosComponent,
   RegistroAdminComponent,
   RegistroExitosoComponent,
+  TimeRangeModule
 };
