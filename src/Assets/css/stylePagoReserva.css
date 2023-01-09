@@ -189,6 +189,14 @@ p {
 
 /* ELIGE TU TURNO ESTILOS */
 
+.horas {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center; 
+}
+
 .eligetuturno {
   padding-left: 10rem;
   padding-right: 10rem;

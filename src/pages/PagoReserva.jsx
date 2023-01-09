@@ -82,8 +82,8 @@ const PagoReservaPage = () => {
 
           <TimeRangeModule />
 
-          <div class="container">
-            <div class="row">
+          <div class="horas">
+            <div>
               <ReservaTuHora />
             </div>
           </div>
