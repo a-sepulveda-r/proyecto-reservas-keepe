@@ -8,6 +8,10 @@ p {
     background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, #4D307B 100%);
   }
 
+.btn {
+  background-color: #F23FAADE;
+}
+
 
 
 .cabecera {
@@ -210,14 +214,15 @@ p {
 }
 
 
-.botonpagarcontenedor {
+.abotonpagarcontenedor {
   display: flex;
   justify-content: center;
   padding-bottom: 4rem;
   padding-top: 2rem;
+
 }
 
-.botonpagar {
+.abotonpagar {
   border-color: #F23FAADE;
   background-color: #F23FAADE;
   border-radius: 30px;

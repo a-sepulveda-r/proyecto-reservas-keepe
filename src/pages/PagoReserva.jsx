@@ -82,6 +82,7 @@ const PagoReservaPage = () => {
         <div className="eligetuturno">
 
           {/* <TimeRangeModule /> */}
+          {/* ESTE MODULO PODRIA SERVIR PORQUE DEVUELVE UN STRING CON EL RANGO DE HORAS */}
 
           <div class="horas">
             <div>
@@ -92,9 +93,9 @@ const PagoReservaPage = () => {
 
         {/* BOTON PAGO */}
 
-        <div className="botonpagarcontenedor">
+        <div className="abotonpagarcontenedor">
           <Link to="/ticket">
-            <Button className="botonpagar">Pagar y Reservar</Button>
+            <Button className="abotonpagar">Pagar y Reservar</Button>
           </Link>
         </div>
       </div>
