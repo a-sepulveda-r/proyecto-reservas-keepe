@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from "react-bootstrap/Button";
+import "../Assets/css/stylePagoReserva.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,7 +12,7 @@ import {
 } from "../components";
 import CalendarPretty from "../components/CalendarPretty";
 import TimeRangeModule from '../components/TimeRangePicker';
-import "../Assets/css/stylePagoReserva.css";
+
 
 import { Link } from "react-router-dom";
 
@@ -80,7 +81,7 @@ const PagoReservaPage = () => {
 
         <div className="eligetuturno">
 
-          <TimeRangeModule />
+          {/* <TimeRangeModule /> */}
 
           <div class="horas">
             <div>

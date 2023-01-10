@@ -8,6 +8,8 @@ p {
     background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, #4D307B 100%);
   }
 
+
+
 .cabecera {
   
     background-image: url("/src/Assets/IMG/basketball-wallpaper-2.jpg");
@@ -32,7 +34,8 @@ p {
 .tituloblanco {
   color: white;
   font-family: 'Quicksand', sans-serif;
-  margin-left: 10rem;
+  display: flex;
+  justify-content: center;
   margin-top: 2rem;
   
 }
@@ -40,7 +43,8 @@ p {
 .tituloblanco2 {
   color: white;
   font-family: 'Quicksand', sans-serif;
-  margin-left: 10rem;
+  display: flex;
+  justify-content: center;
   margin-top: 0rem;
   font-size: medium;
   
@@ -57,7 +61,8 @@ p {
   justify-content: center;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 2rem;
+  margin-top: 0;
+  padding-top: 0;
   padding-bottom: 2rem;
 }
 
@@ -218,7 +223,7 @@ p {
   border-radius: 30px;
   padding: 1rem;
   font-family: Kumbh Sans;
-  width: 18%;
+  width: 100%;
 }
 
 .tarjetaimagen {
