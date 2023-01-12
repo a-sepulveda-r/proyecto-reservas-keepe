@@ -46,7 +46,7 @@ const CarruselMainComponent = () => {
                 <p class="texto-info2 col-sm-12 col-12 ">
                   en donde quieras y revisar los mejores precios.
                 </p>
-                  <a href="/iniciarsesion">
+                  <a href="/reserva">
                 <button  class="boton-reservar" type="btn">
                   <span class="boton-reservar-texto">Reserva aquí</span>
                 </button>
