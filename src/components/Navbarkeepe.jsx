@@ -8,8 +8,8 @@ const NavbarKeepeComponent = () => {
   return (
     <nav class="navbar navbar-expand-lg colorNav" id="navbar-example">
       <div class="container">
-        <Link href="/" class="navbar-brand">
-          <img class="icononav1" src={logoKeepe} alt="" />
+        <Link to="/" class="navbar-brand">
+          <img to="/" class="icononav1" src={logoKeepe} alt="" />
         </Link>
         <span class="iconotext">Keepe</span>
         <button

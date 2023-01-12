@@ -8,9 +8,6 @@ p {
     background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, #4D307B 100%);
   }
 
-.btn {
-  background-color: #F23FAADE;
-}
 
 
 
@@ -219,6 +216,8 @@ p {
   justify-content: center;
   padding-bottom: 4rem;
   padding-top: 2rem;
+  width: 100%;
+
 
 }
 
@@ -226,9 +225,11 @@ p {
   border-color: #F23FAADE;
   background-color: #F23FAADE;
   border-radius: 30px;
-  padding: 1rem;
   font-family: Kumbh Sans;
-  width: 100%;
+  padding: 1rem;
+    /* font-size: 14px; */
+    width: 100%;
+    
 }
 
 .tarjetaimagen {
