@@ -27,6 +27,7 @@ const CardPersonalComponent = () => {
             <div className="col-4 mt-4">
               <Link
                 target="_blank"
+                
                 to="https://www.linkedin.com/in/belén-oyarce-santibáñez/"
               >
                 <img 
