@@ -18,10 +18,10 @@ const CardPersonalComponent = () => {
         <div class="card mx-auto my-5 bg-card border-color">
           <div class="row">
             <div className="col-8">
-              <img
+              <img className="foto-linkedin"
                 src={beli}
                 alt="Foto del rostro de la persona 1"
-                class="mx-auto d-block pb-5 pt-2 bg-image"
+                class="mx-auto d-block pb-2 pt-2 bg-image"
               />
             </div>
             <div className="col-4 mt-4">
@@ -29,7 +29,7 @@ const CardPersonalComponent = () => {
                 target="_blank"
                 to="https://www.linkedin.com/in/belén-oyarce-santibáñez/"
               >
-                <img
+                <img 
                   src={iconoLinkedIn}
                   alt="Icono de la persona 1"
                   class="small rounded-circle mx-auto d-block bg-linkedin"
@@ -47,10 +47,10 @@ const CardPersonalComponent = () => {
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
-              <img
+              <img className="foto-linkedin"
                 src={alfo}
                 alt="Foto del rostro de la persona 1"
-                class="mx-auto d-block pb-5 pt-2 bg-image"
+                class="mx-auto d-block pb-2 pt-2 bg-image"
               />
             </div>
             <div className="col-4 mt-4">
@@ -71,14 +71,15 @@ const CardPersonalComponent = () => {
           </h3>
         </div>
       </div>
+      
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
-              <img
+              <img className="foto-linkedin"
                 src={ari}
                 alt="Foto del rostro de la persona 1"
-                class="mx-auto d-block pb-5 pt-2 bg-image"
+                class="mx-auto d-block pb-2 pt-2 bg-image"
               />
             </div>
             <div className="col-4 mt-4">
@@ -102,14 +103,20 @@ const CardPersonalComponent = () => {
           </h3>
         </div>
       </div>
+
+
+
+
+
+
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
-              <img
+              <img className="foto-linkedin"
                 src={fran}
                 alt="Foto del rostro de la persona 1"
-                class="mx-auto d-block pb-5 pt-2 bg-image"
+                class="mx-auto d-block pb-2 pt-2 bg-image"
               />
             </div>
             <div className="col-4 mt-4">
@@ -133,14 +140,17 @@ const CardPersonalComponent = () => {
           </h3>
         </div>
       </div>
+
+
+
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
             <div className="col-8">
-              <img
+              <img className="foto-linkedin"
                 src={cono}
                 alt="Foto del rostro de la persona 1"
-                class="mx-auto d-block pb-5 pt-2 bg-image"
+                class="mx-auto d-block pb-2 pt-2 bg-image"
               />
             </div>
             <div className="col-4 mt-4">
@@ -164,6 +174,11 @@ const CardPersonalComponent = () => {
           </h3>
         </div>
       </div>
+
+
+      
+     
+     
     </div>
   );
 };
