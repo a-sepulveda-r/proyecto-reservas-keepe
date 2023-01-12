@@ -17,7 +17,7 @@ const CardPersonalComponent = () => {
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card border-color">
           <div class="row">
-            <div className="col-8">
+            <div className="centrado-medio col-8">
               <img className="foto-linkedin"
                 src={beli}
                 alt="Foto del rostro de la persona 1"
@@ -46,7 +46,7 @@ const CardPersonalComponent = () => {
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
-            <div className="col-8">
+            <div className="centrado-medio col-8">
               <img className="foto-linkedin"
                 src={alfo}
                 alt="Foto del rostro de la persona 1"
@@ -75,7 +75,7 @@ const CardPersonalComponent = () => {
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
-            <div className="col-8">
+            <div className="centrado-medio col-8">
               <img className="foto-linkedin"
                 src={ari}
                 alt="Foto del rostro de la persona 1"
@@ -112,7 +112,7 @@ const CardPersonalComponent = () => {
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
-            <div className="col-8">
+            <div className="centrado-medio col-8">
               <img className="foto-linkedin"
                 src={fran}
                 alt="Foto del rostro de la persona 1"
@@ -146,7 +146,7 @@ const CardPersonalComponent = () => {
       <div class="col-lg-2 col-xs-4 col-medidas mb-5">
         <div class="card mx-auto my-5 bg-card ">
           <div class="row">
-            <div className="col-8">
+            <div className="centrado-medio col-8">
               <img className="foto-linkedin"
                 src={cono}
                 alt="Foto del rostro de la persona 1"
