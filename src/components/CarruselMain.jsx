@@ -29,7 +29,7 @@ const CarruselMainComponent = () => {
               <div class="col-sm-12 col-12 col-lg-6 col-md-6 pt-5">
                 <h1 class="titulo1">
                   TU
-                  <span class="img-logo">
+                  <span class="img-logo-cliente">
                     <img src={logoCampana} alt="logo campana" />
                   </span>
                 </h1>
